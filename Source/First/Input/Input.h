@@ -27,3 +27,21 @@ public:
 	TObjectPtr<UInputAction>		mAttack;
 	TObjectPtr<UInputAction>		mSkill1;
 };
+
+UCLASS()
+class FIRST_API UGameInput : public UObject
+{
+	GENERATED_BODY()
+
+public:
+	UGameInput();
+
+public:
+	TObjectPtr<UInputMappingContext> mContext;
+	TObjectPtr<UInputAction>		mMove;
+	TObjectPtr<UInputAction>		mRotation;
+	TObjectPtr<UInputAction>		mJump;
+	TObjectPtr<UInputAction>		mAttack;
+	TObjectPtr<UInputAction>		mSkill1;
+};
+
