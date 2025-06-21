@@ -30,6 +30,7 @@ void UPlayerDefaultAniminstance::NativeUpdateAnimation(float DeltaSeconds)
 		{
 			mMoveSpeed = abs(Movement->Velocity.X + Movement->Velocity.Y);
 			mJumpSpeed = Movement->Velocity.Z;
+			mIsMidAir = Movement->IsFalling();
 		}
 	}
 }

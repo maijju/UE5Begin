@@ -21,6 +21,9 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	float mJumpSpeed = 0.f;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	bool mIsMidAir = false;
+
 public:
 	void NativeBeginPlay();
 	void NativeInitializeAnimation();
