@@ -1,8 +1,8 @@
 # Visual Studio 2015 user specific files
 .vs/
 
-Content/ParagonKwang
-Content/ParagonPhase
+/Content/ParagonKwang
+/Content/ParagonPhase
 
 # Compiled Object files
 *.slo

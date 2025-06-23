@@ -108,6 +108,7 @@ void APlayerCharacter::MoveKey(const FInputActionValue& Value)
 	// MoveKey는 x, y에 값을 넣어두었다.
 	FVector Dir = Value.Get<FVector>();
 
+
 	// 1번 인자에 들어간 벡터에 2번 인자에 들어간 scale 값을 곱하여 내부에 가지고 있는 벡터에 누적시켜준다.
 	AddMovementInput(GetActorForwardVector(), Dir.X);
 	AddMovementInput(GetActorRightVector(), Dir.Y);
